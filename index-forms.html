@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="get">
+        <div>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="First name">
+        </div>
+<br>
+        <div>
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" placeholder="Last name">
+        </div>
+<br>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" placeholder="Date of birth">
+        </div>
+
+        <div>
+            <label for="checkinTime">Check in time</label>
+            <input type="time" id="checkinTime" placeholder="Check in time">
+        </div>
+
+        <div>
+            <label for="these">What color would you like your t-shirt to have</label>
+            <input type="color">
+        </div>
+
+        <div>
+            <label for="desc">Say something about yourself</label>
+            <textarea name="description" id="desc" ></textarea>
+        </div>
+
+
+        // Advanced input types.
+        <p>some o the advanced input types.</p>
+
+        <div> What course are you doing.</div>
+        <select name="courses" id="course">
+            <option value="1">Computer Science</option>
+            <option value="2">Computer technology</option>
+            <option value="3">Software engineering</option>
+            <option value="4">Infromation technology</option>
+        </select>
+
+        <!-- check boxes used when you want to select multiple values -->
+
+        <div>
+            <label for="languages">Which programming languages are you proficient in?</label>
+            <div>
+                <label for="js">Javascrit</label>
+                <input type="checkbox" id="js">
+            </div>
+
+            <div>
+                <label for="java">Java</label>
+                <input type="checkbox" id="java">
+            </div>
+
+            <div>
+                <label for="c">C</label>
+                <input type="checkbox" id="c">
+            </div>
+
+            <div>
+                <label for="kotlin">Kotlin</label>
+                <input type="checkbox" id="kotlin">
+            </div>
+
+        </div>
+
+        <div>
+            <p>What is your gender</p>
+
+            <!-- name attribute - prevents multiple selections whle usin radio buttons. -->
+            <!-- must be common in all entries. -->
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender">
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender">
+
+                <label for="notTosay">Prefer not to say</label>
+                <input type="radio" id="notTosay" name="gender">
+
+            </div>
+        </div>
+
+        <div>
+            <p>Range</p>
+            <div>
+                <label for="rate">How would you rate our services</label>
+                <input type="range" id="rating" min="1" max="10">
+            </div>
+        </div>
+
+        <div>
+            <p>Working with data list</p>
+            <div>
+                <label for="countries"> Where do you live</label>
+                <input type="text" name="countries" id="countries">
+
+                <datalist id="countries">
+                    <option value="1">Kenya</option>
+                    <option value="2">Uganda</option>
+                    <option value="3">Tanzania</option>
+                    <option value="4">Morocco</option>
+                    <option value="5">Australia</option>
+                </datalist>
+            </div>
+        </div>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
